@@ -22,29 +22,29 @@ This repository contains an innovative application that leverages the power of L
 
 ## Getting Started 🚀
 
-To get started with this application, follow these steps:
+*To get started with this application, follow these steps:*
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```
    git clone https://github.com/foolmalhar/VideoChad.git
    ```
 
-2. Install the required dependencies:
+2. **Install the required dependencies:**
    ```
    cd VideoChad
    pip install -r requirements.txt
    ```
 
-3. Set up the necessary environment variables:
+3. **Set up the necessary environment variables:**
    - `OPENAI_API_KEY`: Your [OpenAI API key](https://platform.openai.com/docs/quickstart/account-setup) for accessing the language models.
        > This can be done in ⬆ multiple ways, please read the openai api documentation for detailed steps.
 
-4. Start the Flask backend:
+4. **Start the Flask backend:**
    ```
    python app.py
    ```
 
-5. (Optional) In a separate terminal, start the React frontend:
+5. **(Optional) In a separate terminal, start the React frontend:**
    ```
    cd react_app
    npm install
@@ -53,7 +53,7 @@ To get started with this application, follow these steps:
    *Only for those who know React/Vite and little bit of front-end*
   **This step is NOT needed to use the application, as i have already build the react application and generated static pages in 'dist' folder and the flask app loads it by default at start! :)**
    
-7. Access the application in your web browser at `http://localhost:5000`.
+7. **Access the application in your web browser at `http://localhost:5000`.**
 
 ## Usage
 
