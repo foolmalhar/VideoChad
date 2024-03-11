@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+.markdown > * {
+	all: revert;
+}
+.typing {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 0.15em solid rgb(255, 255, 255);
+	animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: orange;
+	}
+}
