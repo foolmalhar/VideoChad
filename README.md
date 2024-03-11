@@ -46,7 +46,7 @@ To get started with this application, follow these steps:
 
 5. (Optional) In a separate terminal, start the React frontend:
    ```
-   cd react
+   cd react_app
    npm install
    npm run dev
    ```
