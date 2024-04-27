@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-app = Flask(__name__, static_folder="./dist")
+app = Flask(__name__, static_folder="./dist") # requests in the dist folder are being sent to http://localhost:5000/<endpoint> 
 CORS(app, resources={r"/*": {"origins": "*"}}) 
 openai.api_key = os.environ["OPENAI_API_KEY"]
 llm_name = "gpt-3.5-turbo"
@@ -192,7 +192,6 @@ def initialize():
         return jsonify({"status": "error", "message": "Invalid YouTube link."})
 
 
-# messages = [{"role":"system", "content" : "You are friendly chatbot, you give short consise and simple responses. You explain things with example or analogy. You always start with 'Namaskar 🙏' and end with 'Pranam'"}]
 @app.route('/response', methods=['POST'])
 def response():
     """
@@ -213,7 +212,7 @@ def response():
     
     memory = chat_history
     query = req.get('query', '')
-    print(f"Query: {query}")
+    # print(f"Query: {query}")
 
     if memory is None:
         memory = []
@@ -231,6 +230,7 @@ def response():
         return jsonify(dict(timestamps=timestamps, answer=response['answer']))
 
     return jsonify(response['answer'])
+
 @app.route('/transcript', methods=['POST'])
 @cross_origin()
 def send_transcript():
@@ -244,5 +244,6 @@ def send_transcript():
     except:
         return jsonify({"status": "error", "message": "Transcript not found."})
     
+
 if __name__ == '__main__':
     app.run(debug=True)

@@ -125,7 +125,46 @@ const HomePage = () => {
 									</h1>
 
 									<p className="mt-1.5 text-lg text-gray-500">
-										Chat with NPTEL videos! 🎉
+										Chat with Youtube videos! 🎉 Created by 
+										{/* add href anchor for name and github */}
+										<a
+											href="https://github.com/MaxxCode8"
+											className="text-indigo-500 hover:underline"
+										>
+											{" "}
+											Malhar Kulkarni
+										</a>
+										{" "},
+										<a
+											href="https://github.com/kuldeepaher01
+										"
+											className="text-indigo-500 hover:underline"
+										>
+											{" "}
+											Kuldeep Aher
+										</a>
+										
+										
+										{" "}
+										and 
+										<a
+											href="https://github.com/"
+											className="text-indigo-500 hover:underline"
+										>
+											{" "}
+											Sandesh Tangade
+										</a>
+										{" "}
+										Under the guidance of <a
+											href="https://www.linkedin.com/in/jyoti-madake-042b08ab/"
+											className="text-indigo-500 hover:underline"
+										>
+											{" "}
+											Prof. Jyoti Madake
+										</a>
+										{". "}
+										VIT, Pune Dept of Electronics and Telecommunications Engineering
+
 									</p>
 								</div>
 
@@ -164,28 +203,19 @@ const HomePage = () => {
 					<div className="sm:flex sm:items-center sm:justify-between">
 						<div className=" sm:text-left">
 							<h1 className=" text-5xl font-bold text-gray-900 sm:text-3xl text-left ">
-								What is NPTEL?
+								How to use this tool?
 							</h1>
 
 							<p className="mt-1.5 text-lg text-gray-500 text-justify">
-								NPTEL is a joint initiative of the IITs and IISc. Through this
-								initiative, we offer online courses and certification in various
-								topics. We believe that access to knowledge and opportunities is
-								a basic right. We are committed to making this knowledge
-								available to as many people as possible. Our goal is to reach
-								out to the learners and provide them with the opportunity to
-								learn from the best.
+								Simply find any youtube video that you would like to chat with
+								and paste the link below. 
+								New window will open with the video and chat box. First a summary of the video will be shown and then you can chat with the video.
+								Along with the answer of your question, the timestamps or refrences video will be showed in the chat box, You can simply click on the timestamp to jump to that part of the video.
 							</p>
+							<p className="mt-1.5 text-lg text-gray-900 text-justify">⚠️ Just ensure the video has english subtitles</p>
 
 							{/* This is an AI tool which will help you summarise long NPTEL educational Videos ndd then Chat with them, write how this will help in learning and understanding */}
-							<h1 className=" text-5xl font-bold text-gray-900 sm:text-3xl mt-2">
-								How will this tool help you?
-							</h1>
-							<p className="mt-1.5 text-lg text-gray-500 text-justify">
-								This tool will help you summarise long NPTEL educational Videos
-								and then Chat with them. This will help in learning and
-								understanding the content in a better way.{" "}
-							</p>
+							
 						</div>
 					</div>
 				</div>
